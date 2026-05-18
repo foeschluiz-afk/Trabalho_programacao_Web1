@@ -1,0 +1,165 @@
+/* Reset básico */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos para o header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+}
+header a {
+    display: inline-block;
+    color: #1c0242;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px 20px 10px;
+}
+header input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px;
+    width: 300px;
+}
+header button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background: #1c0242;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+main {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Estilos para o body */
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    background: #1c0242;
+    color: white;
+}
+/* Primeira section: Carrossel de destaques e Imagens */
+.destaques-carrossel {
+    width: 80%;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+.destaques-carrossel h2 {
+    text-align: left;
+    padding: 5px 10px 0 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+.destaques-slides {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    width: 100%;
+   
+}
+.destaques-slides img {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+    
+}
+.destaques-slides p{
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    background: #1c0242;
+    padding: 10px;
+    border-radius: 5px;
+}
+.destaques-item {
+    position: relative;
+    align-items: center;
+    min-width: 100%;
+}
+.destaques-item .preco {
+    position: absolute;
+    left: 85%;
+    color: white;
+    font-size: 18px;
+    background: #1c0242;
+}
+/* Setas */
+.destaques-setas {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 10px 0;
+}
+.seta-esquerda,
+.seta-direita {
+    background: #1c0242;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.seta-esquerda:hover,
+.seta-direita:hover {
+    opacity: 1;
+}
+.destaques-indicadores {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #160929;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #6700ff; /* cor do ponto ativo */
+}
+
+/Segunda section:  /
