@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L&Ggames</title>
+    <title>Trabalho 2</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <title>L&Ggames</title>
-    
-</body>
+<header>
+    <nav>
+        <a href="#">STORE</a>
+        <a href="#">BIBLIOTECA</a>
+        <a href="#">NOME</a>
+    </nav>
+    <input type="search" id="search" placeholder="Search...">
+    <button id="login">Login</button>
+</header>
+<main>
+    <section class="destaques-carrossel">
+        <h2>DESTAQUES</h2>
+        <div class="destaques-slides">
+            <div class="destaques-item">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" alt="Destaque 1">
+                <p>Cyberpunk 2077</p>
+                <p class="preco">R$ 199,90</p>
+            </div>
+            <div class="destaques-item">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg" alt="Destaque 2">
+                <p>Red Dead Redemption 2</p>
+                <p class="preco">R$ 149,90</p>
+            </div>
+            <div class="destaques-item">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="Destaque 3">
+                <p>Grand Theft Auto V</p>
+                <p class="preco">R$ 89,90</p>
+            </div>
+            <div class="destaques-item">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="Destaque 4">
+                <p>Counter-Strike: Global Offensive</p>
+                <p class="preco">Grátis</p>
+            </div>
+            <div class="destaques-item">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="Destaque 5">
+                <p>PLAYERUNKNOWN'S BATTLEGROUNDS</p>
+                <p class="preco">R$ 49,90</p>
+            </div>
+        </div>
+        <div class="destaques-setas">
+            <button id="btn-seta-esquerda" class="seta-esquerda">&#9664;</button>
+            <button id="btn-seta-direita" class="seta-direita">&#9654;</button>
+        </div>
+        <div class="destaques-indicadores">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+    <section>
+        <h2>OUTRA ABA</h2>
+        <div>
+
+        </div>
+    </section>
+    <script src="JS/index.js"></script>
+</main>
 </html>
