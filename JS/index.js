@@ -7,7 +7,7 @@ let index = 0;
 const totalSlides = slides.children.length;
 
 function updateSlide() {
-    slides.style.transform = translateX(-${index * 100}%);
+    slides.style.transform = `translateX(-${index * 100}%)`;
     updateDots();
 }
 
